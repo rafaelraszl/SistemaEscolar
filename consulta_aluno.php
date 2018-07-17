@@ -12,9 +12,16 @@ include_once 'includes/menu.inc.php'
 			<thead>
 				<tr>
 					<th>ID</th>
+					<th width="300">CPF</th>
 					<th>Nome</th>
+					<th>Idade</th>
+					<th>Data de Nascimento</th>
+					<th>Nome da Mãe</th>
+					<th>Nome do Pai</th>
 					<th>Email</th>
+					<th>Endereço</th>
 					<th>Telefone</th>
+					<th>Celular</th>
 				</tr>
 			</thead>
 			<tbody>
