@@ -6,7 +6,7 @@
   <li class="divider"></li>
   <li><a href="#!">Professores</a></li>
   <li class="divider"></li>
-  <li><a href="#!">Usuários</a></li>
+  <li><a href="usuarios.php">Usuários</a></li>
   <li class="divider"></li>
   <li><a href="#!">Turmas / Turnos</a></li>
   <li class="divider"></li>

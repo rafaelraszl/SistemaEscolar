@@ -18,7 +18,7 @@ $queryUpdate = $link->query("update tb_alunos set cpf_aluno='$cpf_aluno', nome='
 $affected_rows = mysqli_affected_rows($link);
 
 if($affected_rows > 0) {
-	header("Location: ../consultas.php");
+	header("Location: ../consultas_alunos.php");
 }
 
 
