@@ -1,17 +1,24 @@
-<?php session_start();
-include_once 'includes/header.inc.php';
-include_once 'includes/menu.inc.php';
+<?php
+
+session_start();
+require_once("vendor/autoload.php");
+#include_once 'views/header.html';
+#include_once 'views/menu.html';
+
+use \Slim\Slim;
+use \Mekhet\Page;
+
+$app = new Slim();
+
+$app->config('debug', true);
+
+$app->get('/', function() {
+
+	$page = new Page();
+
+	$page->setTpl("index");
+
+});
+
+$app->run();
 ?>
-
-<!-- INDEX -->
-<div class="row container">
-	<p>&nbsp;</p>
-	<fieldset class="col s12" style="border: 2px #ddd solid; border-radius: 10px; padding: 15px; color: #000; font-weight: bolder">
-		
-		<legend><img src="imagens/ciclo-logo.jpg" alt="[imagem]" width="200" style="border-radius: 20px"></legend>
-		<h5 class="light center">Bem vindo!</h5>
-			
-		</fieldset>
-</div>
-
-<?php include_once 'includes/footer.inc.php' ?>

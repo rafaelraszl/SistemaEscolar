@@ -6,8 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInita56b07df4c24f0c5d508b190db07bb22
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/mekht/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'Mekhet\\' => 7,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Mekhet\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mekhetbr/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -41,7 +51,8 @@ class ComposerStaticInita56b07df4c24f0c5d508b190db07bb22
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInita56b07df4c24f0c5d508b190db07bb22::$fallbackDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita56b07df4c24f0c5d508b190db07bb22::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita56b07df4c24f0c5d508b190db07bb22::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInita56b07df4c24f0c5d508b190db07bb22::$prefixesPsr0;
             $loader->classMap = ComposerStaticInita56b07df4c24f0c5d508b190db07bb22::$classMap;
 

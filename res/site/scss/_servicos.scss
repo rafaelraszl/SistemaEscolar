@@ -1,0 +1,144 @@
+#servicos{
+	> #servicos__itens{
+		> .servicos__item{
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+
+			cursor: pointer;
+			min-height: 150px;
+			background-color: #ccc8c8;
+			background-clip: content-box;
+			margin-bottom: 30px;
+			> a{
+				display: block;
+				height: 150px;
+				width: 100%;
+				text-align: center;
+				position: relative;
+				> span.title{
+					color: transparent;
+					font: 26px $font_main;
+					position: absolute;
+					width: 100%;
+					text-align: center;
+					bottom: -15px;
+					display: block;
+					opacity: 0;
+					transition: all 0.3s linear;
+				}
+				&:hover > span.title{
+					color: #fff;
+					bottom: 10px;
+					opacity: 1;
+					/*text-shadow: 0 0 10px #fff;*/
+				}
+				> span.icon{
+					margin-top: 25px;
+					display: block;
+					position: relative;
+					transition: all 0.3s linear;
+				}
+				/* btn nurse */
+				> span.icon.imgnurse-hover{
+					opacity: 0;
+					top: -83.5%;
+					transition: all 0.3s linear;
+				}
+				> span.icon.imgnurse{
+					opacity: 1;
+					transition: all 0.3s linear;
+				}
+				&:hover > span.icon.imgnurse{
+					/*-ms-transform: scale(0.5);
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);*/
+					display: block;
+					opacity: 0;
+					position: relative;
+					transition: all 0.3s linear;
+				}
+				&:hover > span.icon.imgnurse-hover{
+					/*margin-top: -5px;
+					-ms-transform: scale(0.7);
+					-webkit-transform: scale(0.7);
+					transform: scale(0.7);*/
+					display: block;
+					opacity: 1;
+					position: relative;
+					transition: all 0.3s linear;
+				}
+				/* btn trabalho */
+				> span.icon.imgtrabalho-hover{
+					opacity: 0;
+					top: -83.5%;
+					transition: all 0.3s linear;
+				}
+				> span.icon.imgtrabalho{
+					opacity: 1;
+					transition: all 0.3s linear;
+				}
+				&:hover > span.icon.imgtrabalho{
+					/*-ms-transform: scale(0.5);
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);*/
+					display: block;
+					opacity: 0;
+					position: relative;
+					transition: all 0.3s linear;
+				}
+				&:hover > span.icon.imgtrabalho-hover{
+					/*margin-top: -5px;
+					-ms-transform: scale(0.7);
+					-webkit-transform: scale(0.7);
+					transform: scale(0.7);*/
+					display: block;
+					opacity: 1;
+					position: relative;
+					transition: all 0.3s linear;
+				}
+				/*btn UTI */
+				> span.icon.imguti-hover{
+					opacity: 0;
+					top: -83.5%;
+					transition: all 0.3s linear;
+				}
+				> span.icon.imguti{
+					opacity: 1;
+					transition: all 0.3s linear;
+				}
+				&:hover > span.icon.imguti{
+					/*-ms-transform: scale(0.5);
+					-webkit-transform: scale(0.5);
+					transform: scale(0.5);*/
+					display: block;
+					opacity: 0;
+					position: relative;
+					transition: all 0.3s linear;
+				}
+				&:hover > span.icon.imguti-hover{
+					/*margin-top: -5px;
+					-ms-transform: scale(0.7);
+					-webkit-transform: scale(0.7);
+					transform: scale(0.7);*/
+					display: block;
+					opacity: 1;
+					position: relative;
+					transition: all 0.3s linear;
+				}
+			}
+			&:hover{
+				background-color: $heading_tarja_color;
+			}
+			&, &:hover{
+				transition: all 0.3s linear;	
+			}
+		}
+	}
+}
+
+#linha{
+		width: 160px;
+		border-bottom: 2px solid #36648B;
+		margin-left: 15px;
+}

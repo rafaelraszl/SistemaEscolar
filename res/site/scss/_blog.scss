@@ -1,0 +1,108 @@
+#blog{
+	 #posts{
+		@include make-xs-column(12);
+		@include make-sm-column(7);
+		@include make-md-column(8);
+		> .posts__item{
+			margin-bottom: 30px;
+			/*> img {
+
+			}*/
+			> h2 {
+				font: 300 bold 26px $font_main;
+				color: #36648B;
+				margin: 15px 0 5px;
+
+			}
+			> p {
+				font: 300 16px $font_main;
+				color: #696767;
+				margin-bottom: 15px;
+				line-height: 1.5;
+				letter-spacing: 0px;
+
+			}
+			> a.read_more{
+				display: block;
+				float: right;
+				width: 140px;
+				padding: 10px 0;
+				background-color: #36648B;
+				text-align: center;
+				font: 300 14px $font_main;
+				color: #fff;
+				transition: all 0.2s linear;
+				&:hover{
+					background: #36648B;
+					color: #fff;
+					text-shadow: 0 0 8px #fff;
+					letter-spacing: 1.5px;
+					text-decoration: none;
+					transition: all 0.2s linear;
+				}
+			}
+		}
+	}
+	#sidebar{
+		@include make-xs-column(12);
+		@include make-sm-column(5);
+		@include make-md-column(4);
+		> .widget{
+			> h3.widget__title{
+				font-size: 16px;
+				color: #484848;
+				text-indent: 9px;
+				margin-bottom: 15px;
+				> span{
+					width: 4px;
+				}
+			}
+			> .tempo{
+				margin-bottom: 30px;
+			}
+			> .saude{
+				border: none;
+				margin-bottom: 30px;
+			}
+			> .enquete{
+				border: none;
+				margin-bottom: 30px;
+				width: 120%;
+			}
+			> .widget__body{
+				width: 100%;
+				min-height: 220px;
+				background-color: #484848;
+				margin-bottom: 30px;
+			}
+			ul#fotos{
+				list-style: none;
+				padding: 0;
+				> li{
+					float: left;
+					display: inline;
+					width: 30%;
+					margin: 0 5% 5% 0;
+					&:nth-child(3n){
+						margin-right: 0;
+					}
+				}
+			}
+			#foto_onclick{
+				padding: 0;
+				display: block;
+				width: 100%;
+			}
+			img{
+				width: 100%;
+				margin-top: -10px;
+			}
+		}
+	}
+}
+
+#linha_widget{
+		width: 250px;
+		border-bottom: 2px solid #36648B;
+		margin-left: 10px;
+}
