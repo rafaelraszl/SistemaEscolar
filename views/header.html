@@ -56,7 +56,7 @@
 					        <li><a href="#produtos">Sobre nós</a></li>
 					        <li><a href="#blog">Blog</a></li>
 					        <li><a href="#contato">Contato</a></li>
-					        <li class="areaRestritaAlign"><a href="#areaRestrita">+ Área Restrita</a></li>
+					        <li class="areaRestritaAlign"><a href="/admin/">+ Área Restrita</a></li>
 					        <!--<li><a data-toggle="modal" data-target="#modalContato" href="#">Contato</a></li> -->
 					      </ul>
 					    </div><!-- /.navbar-collapse -->

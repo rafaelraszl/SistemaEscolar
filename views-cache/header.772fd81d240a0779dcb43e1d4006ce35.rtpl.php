@@ -58,12 +58,14 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="/admin" class="logo">
+    <!--  <a href="/admin" class="logo">-->
       <!-- mini logo for sidebar mini 50x50 pixels -->
+      <p class="logo" style="margin: 0">
       <span class="logo-mini"><b>CV</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>HOME</b></span>
-    </a>
+      <span class="logo-lg"><b>Ciclo Vittal</b></span>
+      </p>
+   <!--   </a> -->
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
@@ -209,7 +211,7 @@ desired effect
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="/admin/logout" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
